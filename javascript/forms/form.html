@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <style>
+        body{
+            margin-left: 25;
+            margin-right: 25;
+        }
+    </style>
+</head>
+<body>
+    <form name = "loginForm" id="loginForm">
+        <div>
+            <input name="userName" type="text" placeholder="Enter UserName"><br><br>
+        </div>
+        <p id="pele" style="display: none;font-size: 12px;color: chocolate;">
+            Please Enter User Name 
+        </p>
+        <div>
+            <input name="password" type="password" placeholder="Enter Password"><br><br>
+        </div>
+        <p id="pwd" style="display: none;font-size: 12px;color: chocolate;">
+            Please Enter Password
+        </p>
+        <div>
+            <button onclick = "validateForm()" type = "button" name = "login">
+                Login
+            </button>
+        </div>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

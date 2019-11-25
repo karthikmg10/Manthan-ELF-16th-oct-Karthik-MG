@@ -1,0 +1,34 @@
+table, th, td{
+    /* border:  1px solid black;
+    border-collapse: collapse; */
+    text-align: center;
+    padding: 10px;
+    margin-left: 550px;
+    margin-top: 200px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-radius: 15px;
+}
+table{
+    width: 500px;
+}
+th{
+    background-color: rgba(11, 166, 238, 0.836);
+    color: whitesmoke;
+}
+tr:nth-child(even){
+    background-color: rgba(31, 219, 226, 0.87);
+}
+tr:nth-child(odd){
+    background-color: rgba(153, 24, 223, 0.87);
+}
+td:hover{
+    background-color: rgba(250, 144, 6, 0.863);
+    color: honeydew;
+    cursor: pointer;
+}
+body{
+    background-image: url(/images/team-3373638__340.jpg);
+    background-size: cover;
+}
+  
