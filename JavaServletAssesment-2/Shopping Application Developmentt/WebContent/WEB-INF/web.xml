@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Shopping</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+  <param-name>Country Code</param-name>
+  <param-value>91</param-value>
+  </context-param>
+  <servlet>
+  <servlet-name>myFirstServlet</servlet-name>
+  <servlet-class>com.manthan.empwebappp.servlets.MyFirstservlet</servlet-class>
+  <init-param>
+  <param-name>message</param-name>
+  <param-value>This is servlet config.</param-value>
+  </init-param>
+  </servlet>
+ 
+  <servlet>
+  <servlet-name>loginForm</servlet-name>
+  <jsp-file>/jsp/loginForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>loginForm</servlet-name>
+  <url-pattern>/loginForm</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>RegisterForm</servlet-name>
+  <jsp-file>/jsp/RegisterForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>RegisterForm</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>searchPage</servlet-name>
+  <jsp-file>/jsp/searchPage.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>searchPage</servlet-name>
+  <url-pattern>/searchPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>order</servlet-name>
+  <jsp-file>/jsp/order.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>order</servlet-name>
+  <url-pattern>/order</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+   <servlet-name>orderHistory</servlet-name>
+  <jsp-file>/jsp/OrderHistory.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>orderHistory</servlet-name>
+  <url-pattern>/orderHistory</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
