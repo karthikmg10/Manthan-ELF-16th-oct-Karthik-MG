@@ -1,0 +1,13 @@
+Please create below table before this project execution.
+
+	CREATE TABLE `searchcontent` (
+
+  	`File_name` varchar(255) NOT NULL,
+  
+	`search_Text` varchar(200) NOT NULL,
+  
+	`Type` int(11) DEFAULT '0',
+  
+	PRIMARY KEY (`File_name`,`search_Text`)
+
+	) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
